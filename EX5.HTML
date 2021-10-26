@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Sample</title>
+    </head>
+    <style>
+        body{
+            background-color:lightcoral;
+        }
+        div {
+            border-radius: 5px;
+            background-color:lightgreen;
+            margin: 50px;
+            padding: 60px;
+            text-align:left;
+        }
+        input[type=radio]{
+            width:20%;
+            text-align:justify;
+            margin: 10px;
+
+        }
+        input[type=text], select {
+            width: 100%;
+            padding: 8px ;
+            margin: 7px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=password] {
+            width: 100%;
+            padding: 8px ;
+            margin: 7px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=number]{
+            width: 100%;
+            padding: 8px ;
+            margin: 7px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=email]{
+            width: 100%;
+            padding: 8px ;
+            margin: 7px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=date],input[type=tel] {
+            width: 100%;
+            padding: 8px ;
+            margin: 7px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=file] {
+            width: 100%;
+            padding: 8px ;
+            margin: 7px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color:blueviolet;
+            color: white;
+            padding: 10px ;
+            margin: 7px ;
+            border: none;
+            border-radius:4px;
+            cursor: pointer;
+        }
+        input[type=reset] {
+            width: 100%;
+            background-color:blueviolet;
+            color: white;
+            padding: 10px ;
+            margin: 7px ;
+            border: none;
+            border-radius:4px;
+            cursor: pointer;
+        }
+        textarea{
+            width: 100%;
+            padding: 8px ;
+            margin: 7px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            
+        }
+
+       
+        h1{
+            text-align: center;
+            color: darkblue;
+            font-size: xx-large;
+            font-family:'serif';
+            font-weight:bolder;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        input[type=reset]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <body>
+        <h1>STUDENT LOGIN</h1>
+        <div>
+            <form>
+                <label >Name</label>
+                <input type="text" name="username" autofocus required><br>
+                <label >PassWord</label>
+                <input type="password" name="pwd" required><br>
+                <label >Age</label>
+                <input type="number" name="age" required><br>
+                <label >Gender</label><br>
+                <label>Male</label> <input type="radio" name="gender" required><br>
+                <label>Female</label><input type="radio" name="gender" required>
+                <br>
+                <label>Date Of Birth</label>
+                <input type="date" name="date" required><br>
+                <label >Degree</label>
+                <select name="Degree">
+                    <option>B.Tech</option>
+                    <option>B.E</option>
+                    <option>B.Sc</option>
+                    <option>Diplomo</option>
+                </select><br>
+                <label >Email</label>
+                <input type="email" name="email" required><br> 
+                <label >Phone Number</label>
+                <input type="tel" name="tel" maxlength="10" placeholder="123-456-789" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" required><br>
+                <label >Photo</label>
+                <input type="file" name="photo" required><br>
+                <label >Address</label>
+                <textarea name="message" rows="10" column="10" required></textarea>
+                <input type="submit"  name="submit">
+                <input type="reset" name="reset">
+            </form>
+        </div>
+    </body>
+    </html>
